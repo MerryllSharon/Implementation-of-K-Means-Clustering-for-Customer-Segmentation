@@ -35,7 +35,7 @@ RegisterNumber: 212222080033
 ```
 ```
 import pandas as pd
-import matplotlb.pyplot as plt
+import matplotlib.pyplot as plt
 data = pd.read_csv("Mall_Customers.csv")
 
 data.head()
@@ -60,6 +60,7 @@ km.fit(data.iloc[:,3:])
 
 y_pred = km.predict(data.iloc[:,3:])
 data["cluster"] = y_pred
+y_pred
 
 df0 = data[data["cluster"]==0]
 df1 = data[data["cluster"]==1]
