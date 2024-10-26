@@ -33,7 +33,7 @@ Developed by: Merryll S Sharon
 RegisterNumber: 212222080033 
 */
 ```
-```
+```python
 import pandas as pd
 import matplotlb.pyplot as plt
 data = pd.read_csv("Mall_Customers.csv")
